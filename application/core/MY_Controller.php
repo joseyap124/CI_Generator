@@ -20,5 +20,9 @@ class MY_Controller extends CI_controller
 {
     return $this->input->post($name);
 }
+    protected function GET($name, $clean = false)
+{
+    return $this->input->get($name, $clean);
+}
 }
 ?>
