@@ -16,6 +16,9 @@ class MY_Controller extends CI_controller
         if(strlen($module)>0) return $this->load->view($module.'/includes/layout'.$data);
         return $this->load->view('includes/layout',$data);
     }
-
+    protected function  POST($name)
+{
+    return $this->input->post($name);
+}
 }
 ?>
